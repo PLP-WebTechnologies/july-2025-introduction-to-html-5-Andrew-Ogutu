@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My first GitHub HTML project showcasing web development skills">
+    <title>My First GitHub HTML Project</title>
+</head>
+<body>
+    <header>
+        <h1>First HTML Code</h1>
+        <p>I hope that from this first project I will be able to gain proficiency as time goes by</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Contact Form</h2>
+            <form action="/submit-form" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+            
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" aria-describedby="phone-help">
+                    <span id="phone-help">(10 digits, no spaces)</span>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <section aria-labelledby="table-heading">
+            <h2 id="table-heading">Sample Contacts</h2>
+            <table border="1">
+                <caption>Example Contact Information</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Andrew Ogutu</td>
+                        <td>ogutu@gmail.com</td>
+                        <td>0712334567</td>
+                    </tr>
+                    <tr>
+                        <td>Hillary Kadenge</td>
+                        <td>hkadenge@gmail.com</td>
+                        <td>0712354678</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>jdoe@gmail.com</td>
+                        <td>0734526789</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="info-heading">
+            <h2 id="info-heading">Additional Information</h2>
+            <figure>
+                <img src="image1.jpg" alt="Sample placeholder image" width="150" height="150">
+                <figcaption>Example placeholder image</figcaption>
+            </figure>
+            <p>Additional info to the image <a href="https://google.com" target="_blank" rel="noopener">Google</a>.</p>
+        </section>
+    </main>
+</body>
+</html>
